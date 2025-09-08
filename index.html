@@ -1,1 +1,40 @@
-kfhruijkbgvlfjkdmjfvmkl
+<!-- Answer 1: Event handling & Interactive elements. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Event Handling, Interactive elemens & Form handling</title>
+</head>
+<body>
+    <!-- Inline -->
+    <button onclick="alert('Button clicked!')"> Bonyeza!</button>
+    <p 
+    onmouseover = "this.style.color='purple'" 
+    onmouseout="this.style.color='black'" > 
+    Hover over text!
+    </p>
+
+    <!-- DOM property method -->
+    <button id="myButton">Finyaa!</button>
+    
+    <!-- Event Listener -->
+    <button id="eventListenerButton">Piga!</button>
+    <p id="output">Nangoja...</p>
+
+    <!-- Answer 2: Interactive events -->
+    <button onclick="toggleTheme()"> Toggle Dark mode </button>
+
+    <!-- Answer 3: Form validation -->
+    <form onsubmit="return validateForm()">
+        <!-- <label for="name">Name:</label> -->
+        <input type="email" id="email" placeholder="Enter your email"> <br><br> 
+        <input type="text" id="username" placeholder="Enter your name"> <br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+</html>
